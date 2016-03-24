@@ -1,0 +1,129 @@
+Plugin:
+  Enable: true
+  Debug: true
+  Lang: eng
+  serverName: ElysiumCraft
+Database:
+  tableName: kingdom_
+  useMySql: true
+  MySql:
+    IpAddr: 188.68.51.130
+    Port: '3306'
+    DatabaseName: mc
+    User: mc
+    Pwd: aJ1oFeVbXRuZ
+enabled-worlds:
+- world
+no-region-claim: true
+warzone-free-pvp: false
+kingdom-expiry-days: 999
+denied-commands-neutral:
+- /example
+- /example1
+denied-commands-enemy:
+- /sethome
+- /essentials:sethome
+- /derpcommand with any arguments
+disableFlowIntoLand: true
+showLandEnterMessage: true
+nexusMiningAmount: 20
+useWorldguardSupport: true
+useTitleAPISupport: false
+useActionBarAPISupport: true
+useScoreboardStatsSupport: true
+usePlaceHolderAPISupport: true
+useMVdWPlaceHolderAPISupport: true
+useDynmapSupport: true
+economy:
+  enabled: true
+  money-needed-for-one-rp: 10
+items-needed-for-one-resource-point: 5
+claim-cost: 5
+invade-cost: 10
+land-per-member: 5
+maximum-land-claims: 0
+unreplaceableblocks:
+- BEDROCK
+- OBSIDIAN
+- CHEST
+- ENDER_CHEST
+cost:
+  nexusupgrades:
+    dmg-reduc: 70
+    regen-boost: 70
+    dmg-boost: 70
+    arrow-boost: 100
+    maxmembers: 10
+  misc-upgrades:
+    anticreeper: 20
+    antitrample: 50
+    bombshards: 1000
+    glory: 200
+    nexusguard: 100
+    psioniccore: 500
+  champion:
+    health: 1
+    speed: 20
+    resist: 10
+    weapon: 10
+    duel: 100
+    drag: 30
+    mock: 10
+    thor: 300
+    damagecap: 300
+    plow: 600
+    strength: 500
+    armor: 300
+    reinforcements: 800
+    mimic: 600
+    focus: 700
+  outpost:
+    xpbottle: 5
+  structures:
+    powercell: 250
+    outpost: 250
+  turrets:
+    arrowturret: 100
+    nexustower: 300
+    flameturret: 150
+    pressuremine: 2
+    chemicalmine: 1
+    healingstation: 100
+    psionictotem: 250
+    soldierspawner: 500
+    hellfireturret: 300
+    heatbeamturret: 200
+max:
+  nexusupgrades:
+    dmg-reduc: 75
+    regen-boost: 200
+    dmg-boost: 80
+    arrow-boost: 100
+    maxmembers: 30
+  champion:
+    health: 2048
+    speed: 5
+    resist: 100
+    weapon: 10
+    duel: 1
+    drag: 1
+    mock: 6
+    thor: 1
+    damagecap: 1
+    plow: 1
+    strength: 50
+    armor: 5
+    reinforcements: 2
+    mimic: 1
+    focus: 1
+use-whitelist: false
+resource-point-trade-blacklist: []
+whitelist-items: []
+special-item-cases:
+- IRON_INGOT,30
+- GOLD_INGOT,20
+- EMERALD,50
+- DIAMOND,50
+khome-delay: 3
+invite_expire_delay: 10
+useKingdomPrefixes: true
