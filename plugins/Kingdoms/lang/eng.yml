@@ -17,149 +17,148 @@ Command_Info_PageTextHeader:
 Command_Info_NextPageText:
 - '&6Do /k info &7%nextpagenum% &6to see the next page'
 Command_Info_Page1Title:
-- '&aContents'
+- '&aInhalt'
 Command_Info_Page2Title:
-- '&aWhat is Kingdoms?'
+- '&aWas ist Kingdoms?'
 Command_Info_Page2Content1:
-- Kingdoms is a plugin similar to the popular Factions plugin, but with changes to the gameplay. It allows a player to create his own Kingdom, protect land with the kingdom, and invade other's land for items (and for fun). To see all commands, do /k.
+- Kingdoms ist ein plugin ähnlich wie das beliebte Factions plugin, aber mit geändertem Gameplay. Es erlaubt einem Spieler sein eigenes Kingdom zu erstellen und dessen Land zu verteidigen. Um alle Befehle zu sehen mache /k.
 Command_Info_Page3Title:
-- '&aStarting'
+- '&aStartet'
 Command_Info_Page3Content1:
-- First off, you would want to find a good place to build a base, a normal minecraft base. Once you find a nice spot, do /k create [kingdomname] to start your own kingdom. Then, do /k claim to claim the land you are standing on.
+- Als erstes solltest du einen guten Platz finden um eine Basis zu errichten. Wenn du einen guten Platz gefunden hast mache /k create [kingdomname] um dein eigenes Kingdom zu starten. Dann mache /k claim um den Bereich auf dem du stehst zu beanspruchen.
 Command_Info_Page3Content2:
-- Kingdoms claims chunks. Chunks are 16x255x16 groups of blocks in a minecraft world. So a chunk has the height of a world, and the width and breadth of 16 blocks.
+- Dieser Bereich ist 16x16 groß.
 Command_Info_Page3Content3:
-- This chunk claimed by your kingdom can only be edited by you and your kingdom members, so this means non-members can't break, place or interact with the things in your land. Beware of tnt cannons and invasions though
+- Dieser Bereich kann nur noch von dir und den Mitgliedern deines Kingdoms verändert werden. 
 Command_Info_Page3Content4:
-- 'You don''t necessarily have to create your own kingdom. You can ask another kingdom
-  mod or king to invite you to their kingdom, then you can join their kingdoms instead. '
+- 'Du musst nicht umbedingt dein eigenes Kingdom erstellen. Du kannst ein anderes Kingdom fragen
+  um eingeladen zu werden, dann kannst du ihrem Kingdom beitreten . '
 Command_Info_Page3Content5:
-- /k claim costs ${claimcost} resource points
+- /k claim costs ${claimcost} ressourcen punkte
 Command_Info_Page4Title:
-- '&aThe Nexus'
+- '&aDer Nexus'
 Command_Info_Page4Content1:
-- Once you have claimed your land, do /k nexus to place your nexus block, which resembles a beacon.
+- Sobald du dein Land beansprucht hast, kannst du /k nexus machen um deinen Nexus Block zu plazieren.
 Command_Info_Page4Content2:
-- Nexuses can't be broken with your hand, and can be used to access upgrades, gain resource points, or buy turrets. The nexus is your kingdom's base of operations. When broken by enemies, the enemies can steal your resource points, and if the land your nexus is on is sucessfully invaded, the items stored in the nexus, and all your kingdom resource points will go to the invading kingdom. So ALWAYS protect your nexus land, and the nexus itself.
+- Du kannst deinen eigenen Nexus nicht zerstören, er kann für Verbesserungen verwendet werden, um ressourcen punkte zu erhalten, oder um Geschütze zu kaufen.
 Command_Info_Page4Content3:
-- How to get resourcepoints? First off, do /k tradable. In that list, is the list of items you can't trade for resource points, and the items that give more resourcepoints when traded. To trade resource points, right-click your nexus, and click the wheat. You will now see an empty GUI to place items in. Every ${itemsperrp} item(s) you place in the GUI, you earn 1 resource point. Close the GUI to confirm
+- Wie bekommt man ressourcen punkte? Als erstes mache /k tradable. In dieser Liste sind die Gegenstände die du nicht handeln kannst, und die Gegenstände die mehr ressourcen punkte bringen wenn sie getauscht werden. Um Gegenstände zu handeln rechts-klicke deinen Nexus, und klicke auf das Weizen. Jetzt musst du sie nur darin platzieren. Für jede ${itemsperrp} Gegenstände die du in der GUI plazierst erhältst du 1 ressourcen punkt. Schließe die GUI um das zu bestätigen.
 Command_Info_Page5Title:
-- '&aChampions and Invading'
+- '&aChampions und Invading'
 Command_Info_Page5Content1:
-- Now this is where the real difference between Kingdoms and Factions shows. You are able to invade others land (and vice versa) to claim their land to plunder their resources, build in that space, or just to vent your anger at a guy who deserves it.
+- Ist Deaktiviert
 Command_Info_Page5Content2:
-- To invade someone's land, do /k invade while standing on it. By doing so, you summon their kingdom's champion. You will need to kill the champion in order to claim the land. If the champion kills you, you don't gain the land, and you die. The strength of a kingdom's champion depends on its upgrades.
+- 
 Command_Info_Page5Content3:
-- You can access champion upgrades through the nexus. It is recommended to upgrade Drag, Mock and Champion Speed first as they are the more effective upgrades for your champion. This does not mean that those are the only upgrades you need.
+- 
 Command_Info_Page5Content4:
-- If you happen to invade some other kingdom's nexus land, you will duel a stronger version of their kingom's champion. This nexus champion can summon nexus guards and has more health
+- 
 Command_Info_Page5Content5:
-- Invasions cost ${invadecost} resource points each.
+- 
 Command_Info_Page6Title:
-- '&aTurrets'
+- '&aGeschütze'
 Command_Info_Page6Content1:
-- Do you want an auto mob killer? Do you hate people walking into your base to mine your nexus? Then turrets are the best solution! Nothing says Stay Out like a lovely skull on a fence that shoots projectiles.
+- Möchtest du eine automatische Mobfarm? Dann sind Geschütze die beste Lösung! 
 Command_Info_Page6Content2:
-- Turrets can be purchased from the nexus, thought most are rather expensive. Most turrets must be placed on top of fences. Turrets will shoot at all mobs, non-allies and non-members.
+- Geschütze können im Nexus gekauft werden, obwohl die meisten sehr teuer sind. Die meisten Geschütze müssen auf Zäunen platziert werden. Geschütze schießen auf alle agressiven Monster nicht Mitglieder und nicht Verbundete.
 Command_Info_Page6Content3:
-- Mines are a one-time-use defense system to deter players from entering, and careless players to get killed. Or if you just want an invader to explode just before an invasion.  Mines can ONLY BE TRIGGERED BY NON-MEMBER AND NON-ALLY PLAYERS, so mobs don't activate them. If you plan to repeatedly replace mines, then they are in no means cheap, but if an enemy was to step ona mine, it would be a sad day for that guy due to the Mine's heavy attack.
+- Minen sind Fallen mit einmaliger Verwendung die unvorsichtige Spieler töten. Minen können nur von Feinden ausgelöst werden also nicht von Monstern. Minen sind nicht gerade Günstig, wenn man sie immer wieder erneuert. Sie machen größen Schaden.
 Command_Info_Page7Title:
 - '&aPowercells'
 Command_Info_Page7Content1:
-- Don't you hate it when your enemies walk right up to your nexus to invade it? That can be solved with power cells.
+- Entfernt
 Command_Info_Page7Content2:
-- Power cells can be purchased from the nexus, and are placed similar to how nexuses are placed
+- 
 Command_Info_Page7Content3:
-- Invaders can't invade a chunk next to a chunk with a power cell. So they need to invade the land with the power cell to proceed, making the invasion more costly and time-consuming. However, power cell land does not prevent invaders from invading other power cell land. So remember this before you buy a power cell for each land you have.
+- 
 Command_Info_EndingText:
-- This is the last page of /k info, you can report bugs at https://www.spigotmc.org/threads/kingdoms-battle-for-land-might-and-glory-25-off-until-next-monday-1-7-x-1-8-x-paid.90294/ and if you still have questions, feel free to ask server staff, or fellow players.
+- 
 Command_Info_Page8Title:
-- '&aProtected Chests'
+- '&aGesicherte Kisten'
 Command_Info_Page8Content1:
-- 'Tired of players joining your kingdom...just to rob you blind and leave? Then this
-  feature is for you! Protection signs allow your members to lock their chests! &bJust
-  sneak, and place a sign on the chest you want to protect, write &c&l[Protected]&b
-  on the first line of the sign. '
+- 'Hast du keine Lust mehr auf Spieler die deinem Kingdom beitreten und dich dann ausrauben?
+  Platziere Schilder auf deine Kisten um sie zu sichern! &b
+  schreibe &c&l[Protected]&b
+  In die erste Reihe des Schildes. '
 Command_Info_Page8Content2:
-- Protected chests will become unprotected if the land they are on is unclaimed or invaded. Kings, by default, can open any protected chest in their kingdom.
+- Könige können normalerweise Kisten in ihrem Kingdom öffnen.
 Command_Help_Help:
-- Shows all commands
+- Zeigt alle Befehle an
 Command_Help_Accept:
-- Accept an invite from a kingdom
+- Nimm eine Einladung von einem Kingdom an
 Command_Help_Decline:
-- Decline an invite from a kingdom
+- Lehne eine Einladung von einem Kingdom ab
 Command_Help_Broadcast:
-- Broadcast a message to kingdom members
+- Schreibe mit kingdom Mitgliedern
 Command_Help_Create:
-- Creates a kingdom
+- Erstelle ein Kingdom
 Command_Help_Tradable:
-- Shows what items you can or cannot trade for RP
+- Zeigt welche Items du (nicht) für ressourcen punkte handel kannst
 Command_Help_Sethome:
-- Sets the home of your kingdom
+- Setzt den "home" Punkt deines Kingdoms
 Command_Help_List:
-- Displays the top ten richest kingdoms
+- Zeigt die Top 10 der reichesten Kingdoms an
 Command_Help_Markers:
-- Toggles land markers
+- Schaltet Land Makierungen an oder aus
 Command_Help_Nexus:
-- Changes a block into your kingdom's nexus block
+- Macht einen Block zu dem Nexus deines Kingdoms
 Command_Help_Info:
-- Shows how to use Kingdoms
+- Zeigt wie du Kingdoms verwendest
 Command_Help_Join:
-- Joins a kingdom. Must be invited
+- Einem Kingdom Beitreten
 Command_Help_Leave:
-- Leave your kingdom
+- Dein Kingdom verlassen
 Command_Help_Claim:
-- Claims a 16x16 patch of land for your Kingdom
+- Beansprucht einen Chunk für dein Kingdom
 Command_Help_Chat:
-- Sets your chat to kingdom, allies and public (k, a, p)
+- Legt deinen Chat auf Kingdom(k), Verbundete(a) oder öffentlich(p) fest
 Command_Help_Unclaim:
-- Unclaims a patch of land from your kingdom. &d/k unclaim all &fto unclaim all lands
+- Entfernt ein Gebiet aus dem Besitz deines Kingdoms.
 Command_Help_Unclaimall:
-- Unclaims All your land from your kingdom except your nexus land
+- Entfernt das gesamte Land deines Kingdoms ausser das Land um den Nexus
 Command_Help_Invade:
-- Challenges another kingdom's champion for a patch of their land. Stand on another kingdom's land before using
+- 
 Command_Help_King:
-- Hands the leadership of your kingdom to another member
+- Macht einen anderen Spieler zum König
 Command_Help_Mod:
-- Promotes a member in your kingdom into a Kingdom mod
+- Macht einen anderen Spieler zu einem Moderator deines Kingdoms
 Command_Help_Demote:
-- Demotes a mod in your kingdom to a normal Kingdom member
+- Macht einen Spieler zu einem normalen Spieler in deinem Kingdom
 Command_Help_Setlore:
-- sets the lore of your Kingdom
+- Setzt die Beschreibung deines Kingdoms
 Command_Help_Kick:
-- Kicks a player from your kingdom
+- Entfernst einen Spieler aus deinem Kingdom
 Command_Help_Invite:
-- Invites a player to your kingdom so he can join
+- Lädt einen Spieler in dein Kingdom ein
 Command_Help_Uninvite:
-- Uninvites an invited player from your kingdom
+- Entfernt einen Spieler aus der Einladungsliste
 Command_Help_Home:
-- Teleports to your kingdom home
+- Teleportiert dich zu deinem Kingdom
 Command_Help_Ally:
-- '&b/k ally add &f- &7Marks another kingdom as an ally. Allies can''t damage each
-  other, and turrets don''t shoot allies'
+- '&b/k ally add &f- &7Markiert ein anderes Kingdom als Verbundete. Verbundete können sich nicht gegenseitig 
+  angreifen, und Geschütze schießen nicht auf Verbundete'
 Command_Help_Ally_Description:
-- /k ally to see more info
+- /k ally für mehr Informationen
 Command_Help_Enemy_Description:
-- /k enemy to see more info
+- /k enemy für mehr Informationen
 Command_Help_Neutral:
-- '&b/k ally|enemy break &f- &7Marks another kingdom as neutral'
+- '&b/k ally|enemy break &f- &7Markiert ein anderes Kingdom als Neutral'
 Command_Help_Enemy:
-- '&b/k enemy add &f- &7Marks another kingdom as enemy, allowing you to damage them
-  in their land'
+- '&b/k enemy add &f- &7Markiert ein Kingdom als Feind dadurch kannst du sie in ihrem Land angreifen'
 Command_Help_Disband:
-- Disbands your kingdom
+- Löst dein Kingdom auf
 Command_Help_Donate:
-- Donates the specified amount of resource points to another kingdom
+- Schenk die angegebene Anzahl an ressourcen punkten einem anderen Kingdom
 Command_Help_Rename:
-- Renames your kingdom
+- Bennent dein Kingdom um
 Command_Help_Deposit:
-- Changes the specified amount into resourcepoints for your kingdom. Cannot be undone. You will gain 1 resourcepoint for ${moneyforonerp}
+- 
 Command_Help_Map:
-- Shows a map of the surrounding territory
+- Zeigt eine Karte der Umgebung
 Command_Help_Show:
-- Shows information of the specified kingdom
+- Zeigt Informationen über das angegebene Kingdom
 Command_Help_Defend:
-- Use to teleport to the last area where someone invaded the kingdom
+- 
 Command_Help_Admin_Toggle:
 - Allows the ability to damage players regardless of kingdom, and break blocks in other kingdom land
 Command_Help_Admin_Disband:
@@ -197,17 +196,17 @@ Command_Help_Admin_Help:
 Command_Help_Reload:
 - Reloads Kingdom's config file and lang file
 Command_Accept_No_Invite_Error:
-- '&cNo pending invites to accept!'
+- '&cKeine Einladungen verfügbar!'
 Command_Accept_Kingdom_Full_Error:
-- '&cThe kingdom you are trying to join is full!'
+- '&cDas Kingdom dem du beitreten möchtest ist voll!'
 Command_Accept_Success:
-- '&cSuccessfully joined &e%kingdom%!'
+- '&cDu bist erfolgreich &e%kingdom% beigetreten!'
 Command_Ally_No_Kingdom_Error:
-- '&cYou need to be in a kingdom to use that command!'
+- '&cDu musst in einem Kingdom sein um diesen Befehl zu verwenden!'
 Command_Ally_Kingdom_Doesnt_Exist_Error:
-- '&cThe specified kingdom, %kingdom%, doesn''t exist!'
+- '&cDas Kingdom %kingdom% existiert nicht!'
 Command_Ally_Kingdom_Already_Ally_Error:
-- '&cThe specified kingdom, %kingdom%, is already an ally!'
+- '&cDas Kingdom %kingdom% ist bereits dein Verbündeter!'
 Command_Ally_Kingdom_Is_Enemy_Error:
 - '&c%kingdom% is your enemy! Do /k enemy break %kingdom% before trying to ally them'
 Command_Ally_Success:
@@ -676,7 +675,7 @@ Guis_Nexus_Low_Rank_Error:
 Guis_ChampionUpgrades_Weapon_Title:
 - '&bChampion Weapon'
 Guis_ChampionUpgrades_Weapon_Desc:
-- Provides your champion with a better weapon each upgrade. Max level is 10
+- Provides your champion with a better weapon each upgrade. Max level is 9
 Guis_ChampionUpgrades_Health_Title:
 - '&bChampion Health'
 Guis_ChampionUpgrades_Health_Desc:
@@ -803,11 +802,13 @@ Guis_privateSignGUI_canOpenChest:
 Guis_privateSignGUI_cannotOpenChest:
 - '&cThis player cannot access this protected chest.'
 Nexus_Mining_EarnedRP:
-- '&aYour kingdom earned ${integer} rp for mining nexus!'
+- '&aYour kingdom earned ${integer} rp for minig nexus!'
 Nexus_Mining_isAlliance:
 - '&aYou cannot steal rp from your alliance!'
 Nexus_Mining_isOwn:
 - '&cYou can''t mine your own nexus!'
+Glory_Exp_Gain:
+- '&aGlory of the kingdom! gained 3x exp.'
 Nexus_GUI_Returned_Resources:
 - '&6${integer} &cresources are returned.'
 Nexus_GUI_Require_ResourcePerPoint:
