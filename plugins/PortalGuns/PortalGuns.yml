@@ -1,0 +1,111 @@
+saveDelay: 5000
+worlds:
+- world
+- world_nether
+- world_the_end
+portalgun:
+  maxUseDistance: 32
+  primaryColor: 0,110,255
+  secondaryColor: 255,140,0
+  item: BREWING_STAND_ITEM:0
+  durability:
+    global: -1
+    personal: 10
+  cooldown:
+    global: -1
+    personal: 5000
+  preventDrop: false
+  keepOnDeath: true
+portal:
+  maxDistance:
+    global: -1
+    personal: 64
+  checkCanBuild: true
+  allowCrossWorlds: true
+  fixDelay: 500
+  alwaysVisible: false
+  persistent:
+    global: true
+    personal: false
+  teleportLeashedEntities: true
+  durability:
+    global: -1
+    personal: -1
+  preventBreakingAttachedBlocks: true
+  preventBuildingInside: true
+  velocity:
+    defaultMultiplier: 0.5
+    player:
+      enable: true
+      directional: false
+      multiplier: 1.5
+  teleport:
+    itemsOnThrow: true
+    entitiesOnDamage: true
+cleanup:
+  logout:
+    destroy: false
+    disable: true
+    disablePersistent: true
+  death:
+    destroy: true
+  shutdown:
+    destroy: true
+portalCraftCounts:
+  staff:
+    permission: portalguns.group.staff
+    global: '-1'
+    personal: '-1'
+  vip:
+    permission: portalguns.group.vip
+    global: '0'
+    personal: '3'
+  basic:
+    permission: portalguns.group.basic
+    global: '0'
+    personal: '1'
+blockedPortalMaterials:
+- LAVA
+- STATIONARY_LAVA
+- WATER
+- STATIONARY_WATER
+- STANDING_BANNER
+- BREWING_STAND
+- BED_BLOCK
+- SIGN_POST
+- WALL_SIGN
+- IRON_FENCE
+- FENCE
+- FENCE_GATE
+- BIRCH_FENCE
+- BIRCH_FENCE_GATE
+- SPRUCE_FENCE
+- SPRUCE_FENCE_GATE
+- JUNGLE_FENCE
+- JUNGLE_FENCE_GATE
+- ACACIA_FENCE
+- ACACIA_FENCE_GATE
+- DARK_OAK_FENCE
+- DARK_OAK_FENCE_GATE
+- NETHER_FENCE
+- FENCE_GATE
+- COBBLE_WALL
+- WOODEN_DOOR
+- BIRCH_DOOR
+- SPRUCE_DOOR
+- JUNGLE_DOOR
+- ACACIA_DOOR
+- DARK_OAK_DOOR
+- TRAP_DOOR
+- IRON_TRAP_DOOR
+- WEB
+- WOOD_PLATE
+- STONE_PLATE
+- GOLD_PLATE
+- IRON_PLATE
+- ANVIL
+- STEP
+- WOOD_STEP
+- STONE_SLAB2
+- THIN_GLASS
+- STAINED_GLASS_PANE

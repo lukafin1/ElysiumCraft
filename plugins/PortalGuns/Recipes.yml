@@ -1,0 +1,36 @@
+personalGun:
+  row1: ' #$'
+  row2: '#/#'
+  row3: '*# '
+  indexItem: STICK
+  items:
+    '1':
+      material: NETHER_STAR
+      char: $
+    '2':
+      material: IRON_INGOT
+      char: '#'
+    '3':
+      material: BLAZE_ROD
+      char: /
+    indexItem:
+      material: STICK
+      char: '*'
+globalGun:
+  row1: ' #$'
+  row2: '#/#'
+  row3: '*# '
+  indexItem: STICK
+  items:
+    '1':
+      material: NETHER_STAR
+      char: $
+    '2':
+      material: GOLD_INGOT
+      char: '#'
+    '3':
+      material: BLAZE_ROD
+      char: /
+    indexItem:
+      material: STICK
+      char: '*'

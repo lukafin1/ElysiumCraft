@@ -1,0 +1,19 @@
+# --------------------------------------------------------------
+# This is an example of a listener.
+# You can change it or remove at your will.
+# --------------------------------------------------------------
+# Displays a message at player's bar
+# when they right click on a mob.
+# --------------------------------------------------------------
+
+# Events where the one who clicked is not player are ignored.
+Event: mob click
+
+Animations: Mob Click
+
+# All values like '10 seconds', '2 minutes' or '1 hour' are valid.
+Delay: 5 ticks
+
+# You can specify a message that the animation
+# will recognize from the {message} variable.
+Message: 'Clicked on {entity_clicked}'

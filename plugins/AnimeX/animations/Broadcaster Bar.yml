@@ -1,0 +1,24 @@
+# --------------------------------------------------------------
+# This is an example of an animation.
+# You can change it or remove at your will, but if you remove
+# this, please also remember to remove the appropriate listener.
+# --------------------------------------------------------------
+# Schedules messages broadcasting in player's action bar.
+# --------------------------------------------------------------
+
+Type: action bar
+
+# Animations that do not support multiline, like this one,
+# has their slides specified on every line.
+# The |- characters means the program will read each line as a new one.
+#
+# Different properties in [] brackets can be specified for each line.
+Slides: |-
+    [mode="slides"] [repeats=2] [rounds=12] &7[&c!&7] &fHello {player}! &7[&c!&7]|&7[&c!&7] &fWe are proud you have visited us! &7[&c!&7]
+    [mode="scroll"] [width=60] [scroll-speed=1] &fDid you know that this server is running &bAnimeX&f? Please leave a positive rating if you like this plugin.
+    
+# All values like '10 seconds', '2 minutes' or '1 hour' are valid.
+Delay: 2 tick
+
+# Repeats set to -1 means this animation is infinite.
+Repeats: -1

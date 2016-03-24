@@ -1,0 +1,11 @@
+portals:
+  9059d4c6-67b7-4572-bfd3-346d687122ba:
+    gun: 66bb5e51-c46b-4e7b-9e1e-0716b4728f4a
+    block1: -830,99,635:world
+    block2: -829,99,635:world
+    center: -829,99.25,635.5:world
+    type: PRIMARY
+    persistent: 'true'
+    enabled: 'true'
+    direction: UP
+    secondaryDirection: NORTH

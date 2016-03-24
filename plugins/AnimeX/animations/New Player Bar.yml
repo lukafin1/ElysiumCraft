@@ -1,0 +1,37 @@
+# --------------------------------------------------------------
+# This is an example of an animation.
+# You can change it or remove at your will, but if you remove
+# this, please also remember to remove the appropriate listener.
+# --------------------------------------------------------------
+# Displays a message in the action bar when a new player joins.
+# --------------------------------------------------------------
+
+Type: action bar
+
+# Animations that do not support multiline, like this one,
+# has their slides specified on every line.
+# The |- characters means the program will read each line as a new one.
+#
+# Different properties in [] brackets can be specified for each line.
+Slides: |-
+    &a&lA new player has joined!
+    &b&lSay hello to {event_player}
+
+# All values like '10 seconds', '2 minutes' or '1 hour' are valid.
+Delay: 30 ticks
+
+Repeats: 3
+
+# Do not play for the player who joined.
+Play_To: others
+
+Advanced:
+
+  # Priority controls overlapping.
+  #
+  # If there is already an animation playing, and the new one has a higher
+  # priority, it overlaps the old animation and player will see the new one, 
+  # otherwise they will keep seeing the old animation.
+  #
+  # The old animation will be hibernated and restored once the new animation finishes.
+  Priority: 1

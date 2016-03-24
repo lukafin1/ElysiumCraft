@@ -1,0 +1,7 @@
+example:
+  speed: 0.1
+  frames:
+  - '<glow size=5 normal=&7&l start=&e&l middle=&6&l end=&e&l repeatfirst=10>Kite Holographic Extension</glow>'
+  
+  
+# Please see the resource page for more information on how to make awesome animations like scrollers, typewriters.

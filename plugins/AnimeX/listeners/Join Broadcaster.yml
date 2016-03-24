@@ -1,0 +1,16 @@
+# --------------------------------------------------------------
+# This is an example of a listener.
+# You can change it or remove at your will.
+# --------------------------------------------------------------
+# Run various messages that will be broadcasted upon joining.
+# --------------------------------------------------------------
+
+Event: join
+
+# It is possible to play multiple animations at once.
+Animations: 
+  - Broadcaster Scoreboard
+
+
+# Zero delay means the animation will be launched instantly.
+Delay: 0

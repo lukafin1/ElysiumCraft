@@ -1,0 +1,17 @@
+# --------------------------------------------------------------
+# This is an example of a listener.
+# You can change it or remove at your will.
+# --------------------------------------------------------------
+# Displays a message on bar and in the tab
+# to other players if a new player joins.
+# --------------------------------------------------------------
+
+Event: join
+
+# It is possible to play multiple animations at once.
+Animations: 
+  - New Player Bar
+  - New Player Tab
+
+# Zero delay means the animation will be launched instantly.
+Delay: 0

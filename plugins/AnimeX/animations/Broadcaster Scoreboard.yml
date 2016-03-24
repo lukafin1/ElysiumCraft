@@ -1,0 +1,55 @@
+# --------------------------------------------------------------
+# This is an example of an animation.
+# You can change it or remove at your will, but if you remove
+# this, please also remember to remove the appropriate listener.
+# --------------------------------------------------------------
+# Displays a message in the scoreboard when the player enters
+# or leaves a residence (from the 'Residence' plugin).
+# --------------------------------------------------------------
+
+Type: scoreboard
+
+# Scoreboard's title does not support multiline, so has its slides specified on every line.
+# The |- characters means the program will read each line as a new one.
+#
+# Different properties in [] brackets can be specified for each line.
+Title: |-
+      [mode="scroll"][width=32][space-between=10][repeats=1] &6Neustart der systeme...	  
+      &6[ElysiumCraft&6]
+
+# Where to begin the next repeat in title. Used to skip first slide(s) from repeatings.
+# Example: consider following slides:
+# (index=0) - Welcome to the server
+# (index=1) - Visit our site: www.example.com
+# (index=2) - Play awesome games at /event
+# And you would like to start the animation when player joins and repeat it infinitely, but without the first welcome message.
+# Setting the index to 1 would you allow this.
+Title_Repeat_Index: 11
+
+# All slides/rows on the scoreboard are displayed at once,
+# you can use properties to make then change.
+# Minecraft can only handle 15 rows at the scoreboard.
+#
+# Different properties in [] brackets can be specified for each row.
+Scoreboard: |-
+    &8-------------------------------
+    {col_primary}Welcome:
+    {col_second}{player}
+    
+    {col_primary}Online:
+    {col_second}{online}
+    
+    {col_primary}The time is:
+    {col_second}{time}
+    
+    [mode="slides"][rounds=40]{col_second}You have &4{health_hearths} &7HP|{col_second}Your locale is &o{locale}.|{col_second}You died {deaths} times.
+    
+    [mode="scroll"][space-between=40][rounds=2][width=38]{col_second}Hello {col_second}{player}! Check out AnimeX &aanimations {col_second}posibilities! &eColors {col_second}are supported, too.
+    [mode="scroll"][space-between=40]&6Free {col_second}server &aram &bis &e~{ram} MB!
+    &8------------------------------
+
+# All values like '10 seconds', '2 minutes' or '1 hour' are valid.
+Delay: 1 tick
+
+# Repeats set to -1 means this animation is infinite.
+Repeats: -1

@@ -1,0 +1,64 @@
+# --------------------------------------------------------------
+# This is an example of an animation.
+# You can change it or remove at your will, but if you remove
+# this, please also remember to remove the appropriate listener.
+# --------------------------------------------------------------
+# Schedules messages broadcasting in player's tab.
+# --------------------------------------------------------------
+
+Type: tab
+
+# Animations that support multiline, like this one,
+# can have multiple lines in every slide, so this is like a list.
+# The - is a one key of the list, and the |- character means the program will read each line as a new one.
+#
+# Different properties in [] brackets can be specified for each line.
+Slides_Lines:
+  - |-
+        [repeats=15]&6&m+&7&m----------------&6[&7{online}/10&6]&7&m----------------&6&m+
+        &fWelcome {player} to
+        &6Anime&fServer
+        <secondPart>
+        &6&m+&7&m--------------------------------------&6&m+
+        &fVisit &6SpigotMC.org
+  - |-
+        [repeats=15]&6&m+&7&m----------------&6[&7{online}/10&6]&7&m----------------&6&m+
+        &fWelcome {player} to
+        &6Anime&fServer
+        <secondPart>
+        &6&m+&7&m--------------------------------------&6&m+
+        &fVote and receive a daily &6reward&f!
+  - |-
+        [repeats=15]&6&m+&7&m----------------&6[&7{online}/10&6]&7&m----------------&6&m+
+        &fWelcome {player} to
+        &6Anime&fServer
+        <secondPart>
+        &6&m+&7&m--------------------------------------&6&m+
+        &fThis server is running &6AnimeX &fplugin.
+  - |-
+        &c&m+&7&m----------------&c[&7{online}/10&c]&7&m----------------&c&m+
+        &fWelcome {player} to
+        &6Anime&fServer
+        <secondPart>
+        &c&m+&7&m--------------------------------------&c&m+
+        &fThis server is running &6AnimeX &fplugin.
+  - |-
+        &4&m+&7&m----------------&4[&7{online}/10&4]&7&m----------------&4&m+
+        &fWelcome {player} to
+        &6Anime&fServer
+        <secondPart>
+        &4&m+&7&m--------------------------------------&4&m+
+        &fThis server is running &6AnimeX &fplugin.
+  - |-
+        &c&m+&7&m----------------&c[&7{online}/10&c]&7&m----------------&c&m+
+        &fWelcome {player} to
+        &6Anime&fServer
+        <secondPart>
+        &c&m+&7&m--------------------------------------&c&m+
+        &fThis server is running &6AnimeX &fplugin.
+    
+# All values like '10 seconds', '2 minutes' or '1 hour' are valid.
+Delay: 5 ticks
+
+# Repeats set to -1 means this animation is infinite.
+Repeats: -1

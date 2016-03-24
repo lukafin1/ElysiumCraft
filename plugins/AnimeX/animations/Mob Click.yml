@@ -1,0 +1,37 @@
+# --------------------------------------------------------------
+# This is an example of an animation.
+# You can change it or remove at your will, but if you remove
+# this, please also remember to remove the appropriate listener.
+# --------------------------------------------------------------
+# Displays a message in the action bar when the player
+# right clicks a mob.
+# --------------------------------------------------------------
+
+Type: action bar
+
+# Animations that do not support multiline, like this one,
+# has their slides specified on every line.
+# The |- characters means the program will read each line as a new one.
+#
+# Different properties in [] brackets can be specified for each line.
+Slides: |-
+    &8[&l&4x&8] &9&l{message} &8[&l&4x&8]
+    &8[&l&4x&8] &9&l{message} &8[&l&4x&8]
+    &8[&l&cx&8] &3&l{message} &8[&l&cx&8]
+
+
+# All values like '10 seconds', '2 minutes' or '1 hour' are valid.
+Delay: 2 ticks
+
+Repeats: 4
+
+Advanced:
+
+  # Priority controls overlapping.
+  #
+  # If there is already an animation playing, and the new one has a higher
+  # priority, it overlaps the old animation and player will see the new one, 
+  # otherwise they will keep seeing the old animation.
+  #
+  # The old animation will be hibernated and restored once the new animation finishes.
+  Priority: 1

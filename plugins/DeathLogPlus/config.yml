@@ -1,0 +1,24 @@
+# DeathLogPlus Configuration File
+# 
+# This file is mainly used as a placeholder.
+# Not much happens here, as by its nature, the plugin isn't that customizable.
+# By design, the plugin logs stuff. What's to customize?
+
+database: mysql
+host: localhost
+databaseName: mc_dl
+port: '3306'
+username: mc_dl
+password: fX4cH#@5TbFnuw
+tablePrefix: dlp_
+locationItem: COMPASS
+timeItem: WATCH
+inventoryItem: CHEST
+causeItem: WOOD_AXE
+xpItem: EXP_BOTTLE
+defaultWeaponItem: DIAMOND_SWORD
+backButton: COMPASS
+duplicationButton: WATCH
+inventoryItemDuplication: true
+teleportToLocation: true
+value: coming soon

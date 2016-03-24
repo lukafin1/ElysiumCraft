@@ -1,0 +1,131 @@
+# -------------------------------------------------------------------------------
+#
+# Welcome to the variables file. The placeholders you create here can be used
+# across the plugin, in the animations or listeners.
+#
+# Currently, this file stores all custom variables.
+#
+# -------------------------------------------------------------------------------
+#
+# Operators:
+# define <name> (Begin the variable declaration. Enter the variable name, e.g: define {player_name})
+# script: (Use this operator to write a script (JavaScript) for getting the variable. Script starts on a new line
+#         You can use variable "player" in the script to get the player instance (if available).)
+# local script: (Same as script but this variable will *ONLY* be available inside this file for other scripts.)
+# return <reflectionCode> (Use this operator to use reflections to get the desired value.
+#                         Notable: Use syntax as follows: <classPath> -> getter().anotherGetterOrField
+#                            Example: "org.bukkit.Bukkit -> getServer().getVersion()"
+#                         Sometimes it's possible to use {cast} variable to skip the class declaration,
+#                         but remember the cast is dynamic, it might be the player, the event or anything:
+#                            Example: "{cast} -> getWorld().getName()"
+#
+# -------------------------------------------------------------------------------
+#
+# [*] IMPORTANT [*] 
+# FOLLOWING VARIABLES ARE ALREADY INCLUDED IN THE PLUGIN:
+# Bukkit: {player}, {display_name}, {world} and {health}
+# Essentials: {nick}
+# AuthMe Reloaded: {country_code} and {country_name} 
+# Vault: {pl_prefix} and {pl_suffix}
+# Towny: {town} and {nation}
+# SimpleClans: {clan}
+# Factions (free): {faction}
+#
+# [NOTICE] Adding too many variables might negatively affect server's performance.
+# -------------------------------------------------------------------------------
+
+# Local variable used only in this file.
+# Returns All Minecraft colors.
+define $colors
+local script:
+  ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"]
+
+# A random color.
+define {rand_color}
+script:
+  "&" + $colors[Math.floor(Math.random() * $colors.length)]
+
+# Player's locale.
+# NB: Only works on Spigot!
+define {locale}
+return {cast} -> spigot().getLocale()
+  
+# The entity name from 'player interact at entity' event.
+# Respects villagers' profession.
+define {entity_clicked}
+script:
+var type = $event.getRightClicked().getType();
+type == Java.type("org.bukkit.entity.EntityType").VILLAGER ? $event.getRightClicked().getProfession().toString().toLowerCase() : type.toString().toLowerCase().replace("_", " ")
+
+# The entity name from any event that involves an entity.
+# Respects villagers' profession.
+define {entity}
+script:
+    var type = $event.getEntity().getType();
+    type == Java.type("org.bukkit.entity.EntityType").VILLAGER ? $event.getEntity().getProfession().toString().toLowerCase() : type.toString().toLowerCase().replace("_", " ")
+
+# The entity's health, or "death" if the entity is not alive.
+define {entity_health}
+script:
+  var health = "";
+  for (i = 0; i < ($event.getEntity().getHealth() / 2); i++) {
+       health += "❤";
+  }  
+  $event.getEntity().getHealth() == 0 ? "&k4&r&4&m&lD E A D&k4" : health;
+    
+# The player count on all worlds.
+# Works too on older version of Craftbukkits.
+define {online}
+script:
+  var server = Java.type("org.bukkit.Bukkit");
+  try {
+    server.getOnlinePlayers.size();
+  } catch (err) {
+    server.getOnlinePlayers().length;
+  }
+
+# Gets the player from the event that involves a player
+define {event_player}
+script:
+  $event.getPlayer().getName()
+  
+# Player's death count.
+define {deaths}
+script:
+  player.getStatistic(Java.type("org.bukkit.Statistic").DEATHS);
+
+# Player's health in the hearth symbols.
+define {health_hearths}
+script:
+  var health = "";
+  for (i = 0; i < (player.getHealth() / 2); i++) {
+      health += "❤";
+  }
+  health;
+  
+# Dark red color in night, or light red at the day.
+define {col_primary}
+script:
+  player.getWorld().getTime() > 12900 ? "&4" : "&c"
+
+# Gray color in night, or white at the day.
+define {col_second}
+script:
+  player.getWorld().getTime() > 12900 ? "&7" : "&f"
+
+# Get's the name of the residence from 'Residence' plugin.
+define {residence_name}
+script:
+  $event.getTo() != null ? $event.getTo().getName() : $event.getFrom().getName()
+
+# Checks if the ResidenceChangedEvent from 'Residence' plugin is about
+# player entering or leaving residence, and returns appropriate message.
+define {residence_message}
+script:
+  $event.getTo() != null ? "Welcome " + $event.getPlayer().getName() + " to residence " : "Now leaving residence "
+
+# Server's free memory in megabytes with last number rounded.
+define {ram}
+script:
+  var ram = Java.type("java.lang.Runtime").getRuntime().freeMemory().toString().substring(0, 4);
+  Java.type("java.lang.Math").round(ram / 10) + "0"

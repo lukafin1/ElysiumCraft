@@ -1,0 +1,79 @@
+# Thanks for buying and using CloudBot!
+# This file allows you to edit the config staff.
+# Contact me if you have any problems or suggestions. :)
+
+MySQL:
+  host: 127.0.0.1
+  port: 3306
+  user: mc
+  password: aJ1oFeVbXRuZ
+  database: mc
+TeamSpeak:
+  Server:
+    host: 188.68.51.130
+    port: 9987
+  Query:
+    # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    # Read the FAQ if you have problems configuring this section.
+    # You can also contact us or write to source.
+    # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    nickname: Rank Bot
+    user: cloudbot
+    password: xTo7HRB0
+    port: 10011
+  # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  # NOTE: If you enable this, the join - / welcome messages won't be sent anymore.
+  # So '!link' command won't work too because this is ANOTHER methode to verify players.
+  # If this option is enabled, the new command '/link' will be added automatically to your Minecraft server.
+  # It allows your players to verify themselves through a Minecraft command instead using '!link' TeamSpeak command.
+  # By using '/link' command, it'll checks ip-addresses of all online clients.
+  # This methode may take some performance when looping all clients (only big numbers) but it's easier to use. ;)
+  # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  InGame-VERIFY: false
+  # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  # Choose which rank(s) verified players will be promoted to.
+  # Examples:
+  # * Syntax: <group_id>;<permission>
+  # '2651;null' -> all verified players will be promoted to group 2651
+  # '7803;player.vip' -> verified players who has permission 'player.vip' will be promoted to group 7803
+  # '4130;player.donator' -> verified players who has permission 'player.donator' will be promoted to group 4130
+  # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  promote_group:
+  - 2651;null
+  - 7803;player.vip
+  - 4130;player.donator
+  change_description:
+    enabled: true
+    UUID: 'UUID: %ID%'
+    name: 'Name: %ID%'
+Messages:
+  TeamSpeak:
+    usage: 'Usage: !link [B]MinecraftName[/B]'
+    not_online: '[B]This player is not online![/B]'
+    wrong_identity: '[B]Your ip-address doesn''t match to given player.[/B]'
+    successfully_verified: '[B]You''ve been successfully verified with your minecraft
+      account![/B]'
+    already_verified: '[B]Sorry, you''re already verified![/B]'
+    account_verified: '[B]Sorry, this player is already verified![/B]'
+    welcome:
+      # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      # NOTE: The options in 'welcome' section do only work if you disable 'InGame-VERIFY'.
+      # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      inform_verified_clients: false
+      messages:
+      - Welcome to the official Teamspeak server of XYZ.
+      - You can verifiy your minecraft account using [COLOR=#ff0000]!link MinecraftName[/COLOR] command.
+  Minecraft:
+    prefix: '&8[&cCloudBot&8]'
+    player: '&cThis command can be only executed by players!'
+    successfully_verified: '&aYou''ve been successfully verified!'
+    successfully_unverified: '&aYou''ve been successfully unverified!'
+    not_verified: '&cYou aren''t verified!'
+    InGame_VERIFY:
+      already_verified: '&cYou''re already verified!'
+      no_identity_found: '&cCouldn''t find any client who''s ip-address matching yours!'
+      multiple_identities: '&cCatched more than one identity, make sure you''re conntected
+        only at once!'
+    error: '&cAn error has been occurred, please contact an administrator!'
+debug: false
+online_mode: true

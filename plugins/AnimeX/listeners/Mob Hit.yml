@@ -1,0 +1,15 @@
+# --------------------------------------------------------------
+# This is an example of a listener.
+# You can change it or remove at your will.
+# --------------------------------------------------------------
+# Displays instantly a message at player's
+# scoreboard when they damage a mob.
+# --------------------------------------------------------------
+
+# Events where the damager is not player are ignored.
+Event: mob hit
+
+Animations: Mob Hit
+
+# Zero delay means the animation will be launched instantly.
+Delay: 0

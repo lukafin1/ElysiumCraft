@@ -1,0 +1,21 @@
+# --------------------------------------------------------------
+# This is an example of a listener.
+# You can change it or remove at your will.
+# --------------------------------------------------------------
+# Run a title message on player join.
+# --------------------------------------------------------------
+
+Event: join
+
+# It is possible to play multiple animations at once.
+Animations: 
+  - Join Title
+  - Join Chat
+
+# You can specify a message that the animation
+# will recognize from the {message} variable.
+Message: Welcome {player}
+
+# Repeats set to -1 means this animation is infinite.
+# Two tickss to make the chat animation show up after all other join messages.
+Delay: 2 ticks

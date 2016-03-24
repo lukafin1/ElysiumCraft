@@ -1,0 +1,102 @@
+# PlaceholderAPI version 2.3.5
+# Created by extended_clip
+
+check_updates: true
+cloud_enabled: true
+injector_enabled: true
+boolean:
+  'true': 'yes'
+  'false': 'no'
+date_format: MM/dd/yy HH:mm:ss
+placeholder_hooks:
+  bungeecord: false
+  redisbungee: false
+  invcheck: false
+  javascript: false
+  player: false
+  nmsplayer: false
+  server: true
+  statistic: false
+  pinger: true
+  date: false
+  globalsound: false
+  playersound: false
+  memory: true
+  acidisland: false
+  askyblock: false
+  autorank: false
+  autosell: false
+  chatcolor: false
+  chatreaction: false
+  checknamehistory: false
+  deluxetags: false
+  enjin: false
+  essentials: false
+  ezblocks: false
+  ezprestige: false
+  ezrankspro: false
+  factions: false
+  factionsuuid: false
+  galistener: false
+  gangsplus: false
+  heroes: false
+  islandworld: false
+  jobs: false
+  killstats: false
+  leaderheads: false
+  lwc: false
+  marriage: false
+  marriagemaster: false
+  mcinfected: false
+  mcinfected-ranks: false
+  mcmmo: false
+  minecrates: false
+  mvdw: false
+  mysqltokens: false
+  nicknamer: false
+  nicky: false
+  ontime: false
+  playerpoints: false
+  plotsquared: false
+  pointsapi: false
+  prisonmines: false
+  pvpstats: false
+  quicksell: false
+  royalcommands: false
+  sellall: false
+  simpleclans: false
+  simplecoinsapi: false
+  simpleprefix: false
+  simplesuffix: false
+  skillapi: false
+  skywarsreloaded: false
+  sqlperms: false
+  sqltokens: false
+  sttitles: false
+  superbvote: false
+  tokenenchant: false
+  tokenmanager: false
+  towny: false
+  ultimatevotes: false
+  uskyblock: false
+  vaulteco: false
+  vault: false
+  voteparty: false
+  voteroulette: false
+  wickedskywars: false
+injector:
+  enabled: true
+  chat:
+    enabled: true
+  inventory:
+    enabled: true
+  title:
+    enabled: true
+  tab:
+    enabled: true
+  signs:
+    enabled: true
+    update_interval: 30
+  holographicdisplays:
+    enabled: true
+    update_interval: 30

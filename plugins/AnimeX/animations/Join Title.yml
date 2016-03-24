@@ -1,0 +1,22 @@
+# --------------------------------------------------------------
+# This is an example of an animation.
+# You can change it or remove at your will, but if you remove
+# this, please also remember to remove the appropriate listener.
+# --------------------------------------------------------------
+# Displays a title messages to the player who joined.
+# --------------------------------------------------------------
+Type: title
+
+# Animations that do not support multiline, like this one,
+# has their slides specified on every line.
+# The |- characters means the program will read each line as a new one.
+#
+# Different properties in [] brackets can be specified for each line.
+Slides: |-
+    [fade-in=15] [fade-out=0] [stay=25]&b{message}<secondPart>&aVisit our webpage for &edaily &arewards!
+    [fade-in=0] [fade-out=50] [stay=5]<secondPart>&aVisit our webpage for &edaily &arewards!
+
+# All values like '10 seconds', '2 minutes' or '1 hour' are valid.
+Delay: 35 ticks
+
+Repeats: 1

@@ -1,0 +1,12 @@
+guns:
+  49112214-0ea8-42e1-91c6-e81a02b18140:
+    owner: 9d59daad-6f62-4bd9-b13e-c961bf906750
+    index: '0'
+    type: PERSONAL
+  66bb5e51-c46b-4e7b-9e1e-0716b4728f4a:
+    owner: 9d59daad-6f62-4bd9-b13e-c961bf906750
+    primaryPortal: 9059d4c6-67b7-4572-bfd3-346d687122ba
+    primaryColor: 0,110,255
+    index: '1'
+    type: PERSONAL
+    secondaryColor: 0,117,0

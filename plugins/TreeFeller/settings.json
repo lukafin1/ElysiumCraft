@@ -1,0 +1,12 @@
+{
+  "mcMMOTreeFeller": false,
+  "instantTreeCut": false,
+  "particles": true,
+  "cuttingSpeed": {
+    "DIAMOND_AXE": 0,
+    "IRON_AXE": 1,
+    "WOOD_AXE": 4,
+    "GOLD_AXE": 1,
+    "STONE_AXE": 3
+  }
+}

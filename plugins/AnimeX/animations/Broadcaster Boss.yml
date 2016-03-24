@@ -1,0 +1,49 @@
+# --------------------------------------------------------------
+# This is an example of an animation.
+# You can change it or remove at your will, but if you remove
+# this, please also remember to remove the appropriate listener.
+# --------------------------------------------------------------
+# Schedules messages broadcasting in player's boss bar.
+# --------------------------------------------------------------
+
+Type: boss bar
+
+# Animations that do not support multiline, like this one,
+# has their slides specified on every line.
+# The |- characters means the program will read each line as a new one.
+#
+# Different properties in [] brackets can be specified for each line.
+Slides: |-
+    &8[&4-&8] &e&lWelco ver! &8[&4-&8]
+    &8[&4-&8] &e&lWelcome  server! &8[&4-&8]
+    &8[&4-&8] &e&lWelcome {player} to server! &8[&4-&8]
+    [repeats=5] &8[&4-&8] &e&lWelcome {player} to the server! &8[&4-&8]
+    [repeats=6] {col_second}Did you &eknow {col_second}that this server is running &bAnimeX{col_second}?
+    [repeats=6] {col_second}You can configure this in the animations folder!
+    [repeats=6] {col_second}Bossbar has currently max refresh speed &610 ticks{col_second}!
+
+# All values like '10 seconds', '2 minutes' or '1 hour' are valid.
+Delay: 10 ticks
+
+# Repeats set to -1 means this animation is infinite.
+Repeats: -1
+
+Advanced:
+
+  # Priority controls overlapping.
+  #
+  # If there is already an animation playing, and the new one has a higher
+  # priority, it overlaps the old animation and player will see the new one, 
+  # otherwise they will keep seeing the old animation.
+  #
+  # The old animation will be hibernated and restored once the new animation finishes.
+  Priority: 1
+  
+  # Where to begin the next repeat. Used to skip first slide(s) from repeatings.
+  # Example: consider following slides:
+  # (index=0) - Welcome to the server
+  # (index=1) - Visit our site: www.example.com
+  # (index=2) - Play awesome games at /event
+  # And you would like to start the animation when player joins and repeat it infinitely, but without the first welcome message.
+  # Setting the index to 1 would you allow this.
+  Repeat_Index: 4

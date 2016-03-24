@@ -1,0 +1,146 @@
+prefix: '&8[&4PortalGuns&8] '
+messages:
+  general:
+    time-minutes: '%M:%Sm'
+    invalid-usage: '&cInvalid usage! &7{usage}'
+    time-hours: '%H:%M:%Ss'
+    time-seconds: '%S.%%s'
+    enabled: '&aenabled'
+    secondary: secondary
+    time-days: '%Dd %H:%M:%Ss'
+    no-permission: '&cInsufficient permissions.'
+    disabled: '&cdisabled'
+    player-command: '&cThis is a player command only.'
+    nobody: '&cnobody'
+    invalid-online-player: '&cInvalid player name specified! &7(The player must be
+      online!)'
+    primary: primary
+  item-parser:
+    no-item-specified: '&cNo item specified!'
+    invalid-firework-shape: '&4{input} &cis not a valid firework shape!'
+    unknown-item-name: '&cThe item &4{input} &cis not a valid item!'
+    missing-meta-value: '&cNo value specified for meta &4{meta}&c!'
+    missing-firework-shape: '&cTo create a firework effect, you need to specify the
+      shape!'
+    invalid-color: '&4{input} &cis not a valid color!'
+    missing-firework-color: '&cTo create a firework effect, you need to set at least
+      one color!'
+    invalid-dye-color: '&4{input} &cis not a valid dye color!'
+    invalid-enchant-value: '&4{input} &cis not a valid enchantment level.'
+    invalid-potion-value: '&4{input} &cis not a valid potion effect value. It should
+      be {duration}.{amplifier}&c.'
+    not-a-number: '&4{input} &cis not a number!'
+  gun:
+    craft-gun-info-separator: '&7------------------'
+    craft-new: '&7Craft a new portal gun!'
+    gun-durability-seperator: '&7/'
+    gun-uid-prefix: '&8&o'
+    gun-durability-prefix: '&a'
+    global-owner: '&e(Global gun!)'
+    inactive-gun: '&c&lBroken Portal Gun'
+    craft-copy: '&7Craft a copy of your previous gun!'
+    gun-owner: '&6Owner&8: &a'
+    gun-name: '&6&lPortal &9&lGun'
+    gun-description: |-
+      &7Left click to create the primary portal.
+      &7Right click to create the secondary portal.
+      &aShift click &7to open the &acontrol panel&7!
+    gun-durability-suffix: '&2'
+  control-panel:
+    shares-name: '&6&lShares'
+    color-format: '&c{red}&8,&a{green}&8,&9{blue}'
+    shares-desc: |-
+      &7&oAdd friends to allow them to use your portals!
+      &7They can not use your portal gun!
+      &eLeft click &7to &eadd &7people.
+      &cRight click &7to &cremove &7people.
+      &6Currently shared with&8:
+      {shares}
+    color-desc-increase: increase
+    portal-desc: |-
+      &7This is your {type} portal.
+      &7Below you can adjust the portal color!
+      &6Color&8: &a{color}
+      &6Location&8: &a{location}
+    seperator-left: '&9Primary Portal'
+    red: '&cRed &8[&6{value}&8]'
+    portal-desc-inactive: |-
+      &7This is your {type} portal.
+      &7Below you can adjust the portal color!
+      &c&lThis portal is not active!
+      &cClick while holding your gun to create a portal!
+    persistent-desc: |-
+      &7This portal is persistent.
+      &7The portal won't get deleted when cleanup happens.
+      &eClick &7to make it non persistent.
+    persistent-name: '&6&lPersistent'
+    input-not-shared: '&cThe portals are not shared with this player! &7Type &cq &7to
+      cancel the input mode.'
+    seperator-right: '&6Secondary Portal'
+    green: '&aGreen &8[&6{value}&8]'
+    primary-name: '&9&lPrimary Portal'
+    input-invalid-player: '&cInvalid player specified! &7Type &cq &7to cancel the
+      input mode.'
+    not-persistent-desc: |-
+      &7This portal is not persistent.
+      &7The portal will get deleted when cleanup happens.
+      &6Click &7to make it persistent.
+    input-disabled: '&6Input mode is now disabled.'
+    delete-desc: '&7Delete the {type} portal if it''s active.'
+    input-already-shared: '&cThe portals are already shared with this player! &7Type
+      &cq &7to cancel the input mode.'
+    color-desc: |-
+      &aLeft click &7to {type} the color by &a1&7.
+      &2Shift+Left click &7to {type} the color by &25&7.
+      &eRight click &7to {type} the color by &e20&7.
+      &6Shift+Right click &7to {type} the color by &650&7.
+    not-persistent-name: '&e&lNot Persistent'
+    color-desc-decrease: decrease
+    delete-name: '&c&lDelete Portal'
+    blue: '&9Blue &8[&6{value}&8]'
+    input-shares-add: '&6Type the name of a player you want to add to the shares list
+      in chat. &8(&7Type &cq &7to stop the input mode.&8)'
+    menu-title: '&9&lControl Panel'
+    seperator-center: '&9Primary &7<-> &6Secondary'
+    input-shares-remove: '&6Type the name of a player you want to remove from the
+      shares list in chat. &8(&7Type &cq &7to stop the input mode.&8)'
+    secondary-name: '&6&lSecondary Portal'
+  command:
+    help: |-
+      &8======== &4&l/portalguns help &8========
+      &6/pg [help] &8- &7Display this help page.
+      &6/pg info &8- &7Display plugin information.
+      &6/pg give {player} {type} {index} &8- &7Give a gun
+      &6/pg admin [player] &8- &7Toggle admin mode.
+      &6/pg reload &8- &7Reload configuration files.
+    gun-given: '&6You''ve given &a{player} &6a {type} &6&lPortal &9&lGun&8(&7{index}&8)'
+    admin-enabled: '&6Admin mode &aenabled&6! &8(&7You can now see and use all portals
+      and use any portal gun!&8)'
+    reloaded: '&6All configurations reloaded!'
+    admin-toggle-other: '&6You''ve {type} &6admin mode for &a{player}&6!'
+    invalid-type: '&cInvalid type specified! &7Must be global(g) or personal(p)!'
+    gun-received: '&6You''ve received a {type} &6&lPortal &9&lGun&8(&7{index}&8)'
+    admin-disabled: '&6Admin mode &cdisabled&6! &8(&7Everything is back to normal!&8)'
+  errors:
+    no-side-block: '&cThe portal needs two blocks to attach too.'
+    cant-color: '&cYou don''t have permissions to modify the color!'
+    distance: '&cThe portal can''t be created that far away from the other.'
+    cant-destroy: '&cYou don''t have permissions to destroy portals!'
+    cant-break-portal-attached: '&cThis block has a portal attached. &4You can''t
+      break it!'
+    no-block-range: '&cNo block in range found to attach the portal too.'
+    cant-drop: '&cYou can''t drop your portal gun!'
+    world-not-listed: '&cYou can''t use portal guns in this world!'
+    cant-build: '&cYou can''t create a portal there!'
+    on-cooldown: '&cYou can''t create a {type} portal for another &4{time}&c!'
+    failed: '&cSomething went wrong trying to create your portal. &4Try again later!'
+    cant-share: '&cYou don''t have permissions to share portals!'
+    failed-gun: '&cSomething went wrong trying to create the gun. &4Try again later!'
+    not-your-gun: '&cThis is not your portal gun!'
+    cant-access-control-panel: '&cYou can''t access the control panel!'
+    block-type: '&cCan''t attach a portal to that block.'
+    cross-world: '&cPortals must be created in the same world. &8(&7You can delete
+      the portal in your control panel&8)'
+    cant-create-portals: '&cYou can''t create portals!'
+    cant-toggle-persistence: '&cYou don''t have permissions to toggle the persistence!'
+    cant-build-in-portal: '&cYou can''t build here! &7Occupied by a portal!'

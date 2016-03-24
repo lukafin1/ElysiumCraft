@@ -1,0 +1,11 @@
+sounds:
+  portal-leave: ENTITY_ZOMBIE_INFECT:1.0:1.0
+  portal-destroy: ENTITY_ZOMBIE_VILLAGER_CURE:1.0:2.0
+  panel-open: ENTITY_HORSE_ARMOR:1.0:2.0
+  panel-fail: ENTITY_ITEM_BREAK:0.5:0.0
+  panel-close: ENTITY_HORSE_SADDLE:1.0:2.0
+  panel-click: BLOCK_NOTE_HAT:0.5:2.0
+  portal-create: ENTITY_WITHER_HURT:0.6:2.0
+  portalgun-break: ENTITY_ITEM_BREAK:1.0:1.0
+  portal-enter: ENTITY_ZOMBIE_INFECT:1.0:2.0
+  portalgun-fail: BLOCK_FIRE_EXTINGUISH:0.5:2.0

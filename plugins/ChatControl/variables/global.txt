@@ -1,0 +1,90 @@
+# -------------------------------------------------------------------------------
+#
+# Welcome to the variables file. The placeholders you create here can be used
+# across the plugin (see "Variables" section in settings.yml for configuration)
+#
+# Currently, this file stores all custom variables.
+#
+# -------------------------------------------------------------------------------
+#
+# Operators:
+# define <name> (Begin the variable declaration. Enter the variable name, e.g: define {player_name})
+# script: (Use this operator to write a script (JavaScript) for getting the variable. Script starts on a new line
+#         You can use variable "player" in the script to get the player instance (if available).)
+# local script: (Same as script but this variable will *ONLY* be available inside this file for other scripts.)
+# return <reflectionCode> (Use this operator to use reflections to get the desired value.
+#                         Notable: Use syntax as follows: <classPath> -> getter.anotherGetterOrField
+#                            Example: "org.bukkit.Bukkit -> getServer().getVersion()"
+#                         Sometimes it's possible to use {cast} variable to skip the class declaration like so:
+#                            Example: "{cast} -> getWorld().getName()"
+#                         NB: Keep in mind the cast is dynamic and is not always a player!
+#
+# -------------------------------------------------------------------------------
+#
+# [!] [!] IMPORTANT [!] [!]
+# -- FOLLOWING VARIABLES ARE ALREADY INCLUDED IN THE PLUGIN --
+#
+# ChatControl:      {prefix}, {server_name} and {timestamp}
+# Bukkit:	 		{player}, {tab_name}, {display_name}, {world} and {health}
+# Essentials:		{nick}
+# AuthMe Reloaded: 	{country_code} and {country_name} 
+# Vault: 			{pl_prefix} and {pl_suffix}
+# Towny: 		    {town} and {nation}
+# SimpleClans: 		{clan}
+# Factions (free): 	{faction}
+# ... in addition, variables from plugin PlaceholderAPI are supported, too.
+# -------------------------------------------------------------------------------
+#
+# TIP: If Debug is enabled, you can use command "/chc inspect" to enumerate
+# all methods or fields in a class, which lets you to make new variables easier.
+#
+# [NOTICE] Adding too many variables might negatively affect server's performance.
+# -------------------------------------------------------------------------------
+
+# [-] Following variables has been commented out because they are implemented in the plugin  [-]
+# [-] for best performance. They are here just to show you the example usage.                [-]
+#
+# This is a local script variable (more info above)
+# To call this variable, simply write "$chat" (without "") in some other script.
+#define $chat
+# Start the script (in JavaScript programming language)
+#local script:
+#    var bukkit = Java.type("org.bukkit.Bukkit");
+#    var chat = Java.type("net.milkbowl.vault.chat.Chat").class;
+#
+#    # This will simply returns the Vault's chat provider (if Vault is installed)
+#    bukkit.getServicesManager().getRegistration(chat).getProvider()
+#
+# This is a script variable used for example in chat formatter by calling {pl_prefix}
+#define {pl_prefix}
+#script:
+#    # Notice the "player" variable, this is inserted from ChatControl by default (if available).
+#    $chat.getPlayerPrefix(player.getWorld().getName(), player.getName())
+#
+#define {pl_suffix}
+#script:
+#    $chat.getPlayerSuffix(player.getWorld().getName(), player.getName())
+
+# A reflections-based variable {ping}, notice the NMS access without specifying version
+define {ping}
+# For more information, read the header on the top.
+return {cast} -> getHandle().ping
+
+define {difficulty_color}
+script:
+    var world = player.getWorld();
+    
+    # This line will simply return the value.
+    getColor() + world.getName() + "&8";
+    
+    # You can create methods inside the script, too.
+    function getColor() {
+        var diff = world.getDifficulty().getValue();
+        
+        if (diff == 0) return "&a";
+        if (diff == 1) return "&2";
+        if (diff == 2) return "&6";
+        if (diff == 3) return "&c";
+        
+        return "&a";
+    }

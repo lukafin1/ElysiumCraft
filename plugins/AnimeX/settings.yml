@@ -1,0 +1,112 @@
+# --------------------------------------------------------------------------
+#           Welcome to the main configuration of AnimeX
+# --------------------------------------------------------------------------
+#
+# Following tips applies to all AnimeX's files, so they are not
+# mentioned multiple times.
+#
+# 1) Color codes are supported with the '&' character, see
+#    http://minecraftwiki.net/wiki/Formatting_codes for usage
+#
+# 2) Unicode /special characters/ only work when files are saved in 
+#    UTF-8 encoding. Tested on Notepad++, WordPad on Windows is broken.
+#
+# 3) JSON is supported when possible. To use it, prepend the message with '[JSON]'.
+#    NB: Please use either quotes (a.) or write the json on a new line using |-
+#        in the .yml files (recommended) (b.). Examples:
+#        a) Warn_Message: '[JSON] {"text": "Hello World"}'
+#        b) Example_Message: |-
+#           [JSON]
+#           {"text": "Hover Me","hoverEvent": {"action": "show_text","value": {"text": "Hey there!"}}}
+#
+# 4) For placeholder list, visit the variables/global.txt file.
+# --------------------------------------------------------------------------
+
+# --------------------------------------------------------------------------
+# Settings that affect the performance.
+# --------------------------------------------------------------------------
+Performance:
+
+  # Flush the scrolling text on every animation refresh?
+  # If false, variables will only be displayed when they are completelly
+  # visible, e.g. {player} (but not '{pla', which leeds to artefacts)
+  Variables_In_Scroller: true
+  
+  # [!] Following option is unsafe and might be harmful to your server!
+  # Keep processing off the main thread. Highly advised NOT to enable
+  # unless you are running some hub server where players don't stay for too long.
+  # Some animation plugins do this to claim they cause zero lag.
+  Async_Animations: false
+
+# --------------------------------------------------------------------------
+# Advanced settings. Change is recommended only if:
+# a) you know what you are doing & the consequences
+# b) you have been navigated to change it by the support
+# --------------------------------------------------------------------------
+Advanced:
+
+  # Caching animations will make animations that starts upon player join
+  # re-launch after reload, without the need of player re-joining again.
+  # [NB] This feature is in development. Bugs might occur.
+  Cache: true
+
+# --------------------------------------------------------------------------
+# Tells detailed info in the console about various events/configurations.
+# [TIP] Don't be afraid to turn this on, it will help you understand
+# what you have set up and thus enabling you to solve issues by yourself.
+# --------------------------------------------------------------------------
+# Example of all possible sections being debugged:
+#Debugger:
+#  - animation
+#  - listener
+#  - scoreboard
+#  - cache
+Debugger: []
+
+# --------------------------------------------------------------------------
+# Variables-related settings.
+# --------------------------------------------------------------------------
+Variables:
+  
+  # If Vault is present, enforce player's prefix/suffix to contain prefix/suffix from each of their group?
+  # Limitation: They are only displayed if the player has assigned multiple groups, not when a group inheritances multiple prefixes from others.
+  Vault:
+    Multi_Prefix: false
+    Multi_Suffix: false
+
+# --------------------------------------------------------------------------
+# Get to know if there is a new version available.
+# --------------------------------------------------------------------------
+Updater:
+  Enabled: true
+  Notify: true
+
+# --------------------------------------------------------------------------
+# Various messages used internally in the plugin.
+# --------------------------------------------------------------------------
+Messages:
+  Prefix: '&8[&5AnimeX&8]&7'
+  Server_Prefix: '&8[&4Server&8]&c'
+  Console: '&cserver'
+  No_Permission: '&cInsufficient permission (%perm).'
+  Reload_Complete: '%prefix &2Configuration reloaded successfuly.'
+  Reload_Failed: '%prefix &cReloading configuration failed, check console. The error was: &4%error'
+  Wrong_Arguments: '&cWrong arguments. Type &6/animex list&c for command list.'
+  Update_Available: |- 
+                    &2A new version of &3AnimeX&2 is available.
+                    &2Current version: &f%current&2; New version: &f%new
+                    &2URL: &7https://www.spigotmc.org/resources/17767/.
+
+# If true, the operators will have all permissions from this plugin by default.
+Op_Has_Permissions: true
+
+# Time of some plugin's operations is measured.
+# Print a message in the console if they take more then specified amount of time in milliseconds.
+# Set 0 to disable.
+Log_Lag_Over_Milis: 100
+
+# Removes messages about the animations that are loaded from console on startup.
+Silent_Startup: false
+
+# Do not change this value, otherwise it will corrupt your plugin installation!
+Version: 1

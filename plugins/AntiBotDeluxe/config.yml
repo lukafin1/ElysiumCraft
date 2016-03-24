@@ -1,0 +1,82 @@
+#The Message that will be shown when a player is not allowed to join the Server!
+KickMessages:
+  BlackListed:
+    - "&bGridMine&7\xbb &cYou have been Kicked!"
+    - ""
+    - "&6Reason: &cYou are on the BlackList!"
+  Proxy:
+    - "&bGridMine&7\xbb &cYou have been Kicked!"
+    - ""
+    - "&6Reason: &cProxy is detected!"
+  NotPinged:
+    - "&bGridMine&7\xbb &cYou have been Kicked!"
+    - ""
+    - "&6Reason: &cPlease add our Server to your Minecraft Server list!"
+  TooMuchPlayers:
+    - "&bGridMine&7\xbb &cYou have been Kicked!"
+    - ""
+    - "&6Reason: &cThere are too much players logging in at the time!"
+  MaxIPs:
+    - "&bGridMine&7\xbb &cYou have been Kicked!"
+    - ""
+    - "&6Reason: &cToo much players have been logged in with your ip!"
+#The Messages that will be shown in the ActionBar when the Server is getting Botted!
+AdminAlert:
+  Blacklisted: "&6%player% &7[%ip%] &ctried to join. &e(Blacklisted)"
+  NotPinged: "&6%player% &7[%ip%] &ctried to join. &e(No-Serverlist)"
+  Proxy: "&6%player% &7[%ip%] &ctried to join. &e(Proxy)"
+  MaxIPs: "&6%player% &7[%ip%] &cconntected %value% times with the same IP. &e(Multi-IP)"
+  TooMuchPlayers: "&cMore than %value% Players connecting one time. &e(%player% [%ip%])"
+  DoubleAccount: "&6%player% &7[%ip%] &cconntected with a second account &6%other% &7[%otherip%]. &e(Multi-IP)"
+  Whitelisted: "&6The Player %player% has been added to the WhiteList automatically!"
+  
+ProxySettings:
+  #Proxy Percent buggy
+  ProxyMax: 70 
+  PercentCheck: true
+  ProxyCheck: true
+
+#Server has to be pinged (added to the serverlist)  
+PingSettings:
+  PingCheck: false
+  
+#MultiIP Blocking  
+MaxIPSettings:
+  MaxIPCheck: true
+  MaxIPs: 4
+  
+#How much players per second able to join  
+MaxPlayerSettings:
+  MaxPlayerCheck: true
+  PlayersPerSec: 10
+
+#Connect to IPBlacklist to detect Proxys
+BlackListSettings:
+  Blacklist: true
+  
+#Message if a Player connect with a second account.
+DoubleAccountSettings:
+  DoubleAccountChecking: true
+  
+#The Messages that will be shown in the Chat!
+NoPermission: "&cYou dont have permission to perform this command!"
+WhitelistAdded: "&cThe Player %player% has been added to the WhiteList!"
+WhitelistRemoved: "&cThe Player %player% has been removed from the WhiteList!"
+BlacklistAdded: "&cThe Player %player% has been added to the BlackList!"
+BlacklistRemoved: "&cThe Player %player% has been removed from the BlackList!"
+AlreadyOnWhitelist: "&cThe Player %player% is already on the WhiteList!"
+NotOnWhitelist: "&cThe Player %player% is not on the WhiteList!"
+AlreadyOnBlacklist: "&cThe Player %player% is already on the BlackList!"
+NotOnBlacklist: "&cThe Player %player% is not on the BlackList!"
+ForPlayersOnly: "&cYou cannot execute this command as console!"
+ToggleBotMessageOn: "&cYou are now receiveing Bot-Messages!"
+ToggleBotMessageOff: "&cYou are no longer receiveing Bot-Messages!"
+PluginReloaded: "&cThe Plugin has been reloaded!"
+
+
+General:
+  RestartOnError: true
+  Log: true
+  AutoWhitelist: true
+#The time in Minutes
+  AutoWhitelistTime: 1

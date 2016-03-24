@@ -1,0 +1,54 @@
+# --------------------------------------------------------------
+# This is an example of an animation.
+# You can change it or remove at your will, but if you remove
+# this, please also remember to remove the appropriate listener.
+# --------------------------------------------------------------
+# Displays a message in the scoreboard when the player
+# damages a mob.
+# --------------------------------------------------------------
+
+Type: scoreboard
+
+# Scoreboard's title does not support multiline, so has its slides specified on every line.
+# The |- characters means the program will read each line as a new one.
+#
+# Different properties in [] brackets can be specified for each line.
+Title: |-
+       &8[&a&lC&7ombat&8]
+       &8[&a&lCo&7mbat&8]
+       &8[&7C&a&lom&7bat&8]
+       &8[&7Co&a&lmb&7at&8]
+       &8[&7Com&a&lba&7t&8]
+       &8[&7Comb&a&lat&8]
+       [rounds=10]&8[&7Combat&8]
+
+# All slides/rows on the scoreboard are displayed at once,
+# you can use properties to make then change.
+# Minecraft can only handle 15 rows at the scoreboard.
+#
+# Different properties in [] brackets can be specified for each row.
+Scoreboard: |-
+    &8------------------------------
+    
+    &lNow fighting {entity}
+    
+    &7Your  HP: &4{health_hearths}
+    &7Opponent: &4{entity_health}
+    
+    &8------------------------------
+    
+# All values like '10 seconds', '2 minutes' or '1 hour' are valid.
+Delay: 2 ticks
+
+Repeats: 30
+
+Advanced:
+
+  # Priority controls overlapping.
+  #
+  # If there is already an animation playing, and the new one has a higher
+  # priority, it overlaps the old animation and player will see the new one, 
+  # otherwise they will keep seeing the old animation.
+  #
+  # The old animation will be hibernated and restored once the new animation finishes.
+  Priority: 1
