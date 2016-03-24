@@ -170,7 +170,7 @@
             {
               "type": "DIAMOND_ORE",
               "data": 0,
-              "size": 4,
+              "size": 99,
               "count": 2,
               "minHeight": 0,
               "maxHeight": 16
