@@ -2062,105 +2062,105 @@
       "entitySettings": {
         "EpicOcean": {
           "AMBIENT": [],
+          "CREATURE": [],
           "MONSTER": [],
-          "WATER_CREATURE": [],
-          "CREATURE": []
+          "WATER_CREATURE": []
         },
         "EpicBirchForest": {
           "AMBIENT": [],
+          "CREATURE": [],
           "MONSTER": [],
-          "WATER_CREATURE": [],
-          "CREATURE": []
+          "WATER_CREATURE": []
         },
         "EpicMesa": {
           "AMBIENT": [],
+          "CREATURE": [],
           "MONSTER": [],
-          "WATER_CREATURE": [],
-          "CREATURE": []
+          "WATER_CREATURE": []
         },
         "EpicJungle": {
           "AMBIENT": [],
+          "CREATURE": [],
           "MONSTER": [],
-          "WATER_CREATURE": [],
-          "CREATURE": []
+          "WATER_CREATURE": []
         },
         "EpicStoneForest": {
           "AMBIENT": [],
+          "CREATURE": [],
           "MONSTER": [],
-          "WATER_CREATURE": [],
-          "CREATURE": []
+          "WATER_CREATURE": []
         },
         "EpicPlains": {
           "AMBIENT": [],
+          "CREATURE": [],
           "MONSTER": [],
-          "WATER_CREATURE": [],
-          "CREATURE": []
+          "WATER_CREATURE": []
         },
         "EpicBonsai": {
           "AMBIENT": [],
+          "CREATURE": [],
           "MONSTER": [],
-          "WATER_CREATURE": [],
-          "CREATURE": []
+          "WATER_CREATURE": []
         },
         "EpicRiver": {
           "AMBIENT": [],
+          "CREATURE": [],
           "MONSTER": [],
-          "WATER_CREATURE": [],
-          "CREATURE": []
+          "WATER_CREATURE": []
         },
         "EpicFrozenRiver": {
           "AMBIENT": [],
+          "CREATURE": [],
           "MONSTER": [],
-          "WATER_CREATURE": [],
-          "CREATURE": []
+          "WATER_CREATURE": []
         },
         "EpicDesert": {
           "AMBIENT": [],
+          "CREATURE": [],
           "MONSTER": [],
-          "WATER_CREATURE": [],
-          "CREATURE": []
+          "WATER_CREATURE": []
         },
         "EpicBirchForestHills": {
           "AMBIENT": [],
+          "CREATURE": [],
           "MONSTER": [],
-          "WATER_CREATURE": [],
-          "CREATURE": []
+          "WATER_CREATURE": []
         },
         "EpicJungleEdge": {
           "AMBIENT": [],
+          "CREATURE": [],
           "MONSTER": [],
-          "WATER_CREATURE": [],
-          "CREATURE": []
+          "WATER_CREATURE": []
         },
         "EpicSpace": {
           "AMBIENT": [],
+          "CREATURE": [],
           "MONSTER": [],
-          "WATER_CREATURE": [],
-          "CREATURE": []
+          "WATER_CREATURE": []
         },
         "EpicJungleHills": {
           "AMBIENT": [],
+          "CREATURE": [],
           "MONSTER": [],
-          "WATER_CREATURE": [],
-          "CREATURE": []
+          "WATER_CREATURE": []
         },
         "Winterland": {
           "AMBIENT": [],
+          "CREATURE": [],
           "MONSTER": [],
-          "WATER_CREATURE": [],
-          "CREATURE": []
+          "WATER_CREATURE": []
         },
         "EpicForgottenForest": {
           "AMBIENT": [],
+          "CREATURE": [],
           "MONSTER": [],
-          "WATER_CREATURE": [],
-          "CREATURE": []
+          "WATER_CREATURE": []
         },
         "EpicTU": {
           "AMBIENT": [],
+          "CREATURE": [],
           "MONSTER": [],
-          "WATER_CREATURE": [],
-          "CREATURE": []
+          "WATER_CREATURE": []
         }
       }
     }
